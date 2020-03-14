@@ -1,6 +1,8 @@
-# girlfriendcounter
+# startup_name_generator
 
-App to manage girlfriends.
+Generate infinite list of creative names for your startup.
+
+PS: I forgot to update package name and description ^^'
 
 ## Getting Started
 
