@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Startup Name Generator',
       home: RandomWords(),
     );
@@ -27,6 +28,9 @@ class RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Startup Name Generator'),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved,)
+        ],
       ),
       body: _buildSuggestions(),
     );
@@ -69,6 +73,9 @@ class RandomWordsState extends State<RandomWords> {
           }
       },
     );
+  }
+
+  void _pushSaved() {
   }
 }
 
